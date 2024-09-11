@@ -27,14 +27,14 @@ function Homemainbar() {
         )}
         <button className="ask-btn" onClick={checkauth}>Ask Questions</button>
       </div>
-      <div>
+     <div>
         {questionlist.data === null ? (
           <h1>Loading...</h1>
         ) : (
           <>
             <p>{questionlist.data.length} questions</p>
             <Questionlist questionlist={questionlist.data} />
-          </>
+          </> 
         )
         }</div>
     </div>
